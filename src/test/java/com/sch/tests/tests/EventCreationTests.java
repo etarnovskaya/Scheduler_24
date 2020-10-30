@@ -42,6 +42,17 @@ public class EventCreationTests extends  TestBase{
         app.getEventHelper().tapOnPencil();
         app.getEventHelper().swipeCalendarToLeft();
 
+       /*string month, String day (Dec 31)
+        list of dates (3)
+        (for int i = 0; i<list.size; i++){
+        String month = ...
+        while(month!=month){
+        tapOnArrow();
+        }
+        while day!= day
+        }
+     */
+
         app.getEventHelper().fillEventCreationForm("aaaaa", "1", 3, "50");
         app.getEventHelper().TapOnAddEventButton();
 
