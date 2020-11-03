@@ -82,7 +82,7 @@ public class HelperBase {
         //get activity points
         Dimension size = driver.manage().window().getSize();
         int leftPoint = (int) (size.width* 0.2);
-        int rightPoint = (int) (size.width* 0.8);
+        int rightPoint = (int) (size.width* 0.5);
 
 //get Element's point
         WebElement element = driver.findElement(locator);
