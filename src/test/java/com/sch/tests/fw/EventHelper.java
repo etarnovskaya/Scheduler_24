@@ -87,23 +87,45 @@ public class EventHelper extends HelperBase {
     }
 
     public void selectDate(String type, String month, String dayOfMonth) {
-
-
-        System.out.println(getSelectedMonth());
-        System.out.println(getSelectedDayOfMonth());
-
         if (!getSelectedMonth().equals(month)) {
             if (type.equals("past")) {
                swipeDateToRightUntilNeededMonth(month);
+
+               if(!getSelectedDayOfMonth().equals(dayOfMonth)){
+                   swipeDateToRightUntillNeededDayOfMonth(dayOfMonth);
+               }
 //                swipeToRightUntilNeededDay(dayOfMonth);
             } else if (type.equals("future")) {
                 swipeDateToLeftUntilNeededMonth(month);
-                //swipeToLeftUntilNeededDay(dayOfMonth);
+                if(!getSelectedDayOfMonth().equals(dayOfMonth)){
+                    swipeDateToLeftUntillNeededDayOfMonth(dayOfMonth);
+                }//swipeToLeftUntilNeededDay(dayOfMonth);
             }
+        } else if(!getSelectedDayOfMonth().equals(dayOfMonth)){
+            if (type.equals("past")) {
+                swipeDateToRightUntillNeededDayOfMonth(dayOfMonth);
+            }else if (type.equals("future")) {
+                swipeDateToLeftUntillNeededDayOfMonth(dayOfMonth);
+            }
+
+
+        }
 
         }
 
 
+    private void swipeDateToLeftUntillNeededDayOfMonth(String dayOfMonth) {
+        while (!getSelectedDayOfMonth().equals(dayOfMonth)) {
+            moveElementToLeft(By.id("info_viewPager"));
+            getSelectedDayOfMonth();
+        }
+    }
+
+    private void swipeDateToRightUntillNeededDayOfMonth(String dayOfMonth) {
+        while (!getSelectedDayOfMonth().equals(dayOfMonth)) {
+            moveElementToRight(By.id("info_viewPager"));
+            getSelectedDayOfMonth();
+        }
     }
 
     private void swipeDateToRightUntilNeededMonth(String month) {

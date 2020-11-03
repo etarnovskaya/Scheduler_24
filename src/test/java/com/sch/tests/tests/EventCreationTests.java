@@ -31,12 +31,7 @@ public class EventCreationTests extends  TestBase{
 
     @Test
     public void testEventCreationChangeDate(){
-        /*
-         * tap on Plus button
-         * tapOnPencil
-         * fillEventCreationForm
-         * TapOnAddEventButton
-         * */
+
       //  int before = app.getEventHelper().getEventCountByMonth("November");
         app.getEventHelper().tapOnPlusButton();
         app.getEventHelper().tapOnPencil();
@@ -52,12 +47,7 @@ public class EventCreationTests extends  TestBase{
         while day!= day
         }
      */
-        app.getEventHelper().selectDate("past","OCTOBER", "31");
-
-
-
-
-
+        app.getEventHelper().selectDate("future","NOVEMBER", "10");
 
         app.getEventHelper().fillEventCreationForm("aaaaa", "1", 3, "50");
         app.getEventHelper().TapOnAddEventButton();
