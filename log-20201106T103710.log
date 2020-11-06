@@ -1,0 +1,3 @@
+10:37:34 [Test worker] INFO  com.sch.tests.fw.ApplicationManager - device is Ready
+10:37:34 [Test worker] INFO  com.sch.tests.tests.TestBase - start method checkThatCreatedEventsArePresentTest
+10:39:14 [Test worker] INFO  com.sch.tests.tests.TestBase - PASSED: Test method checkThatCreatedEventsArePresentTest

@@ -49,7 +49,7 @@ public class EventCreationTests extends  TestBase{
      */
         app.getEventHelper().selectDate("future","NOVEMBER", "10");
 
-        app.getEventHelper().fillEventCreationForm("aaaaa", "1", 3, "50");
+        app.getEventHelper().fillEventCreationForm("aaaaa", "1", 0, "50");
         app.getEventHelper().TapOnAddEventButton();
 
         Assert.assertTrue(app.getEventHelper().isEventPresent());

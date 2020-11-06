@@ -29,7 +29,7 @@ public class EventHelper extends HelperBase {
 //swipeLeftSelectPastDate
         //swipeRightSelectFutureDate
 
-        type(By.id("info_title_input"), title);
+        type(By.id("info_title_inpu"), title);
         type(By.id("info_type_input"), type);
         closeKeyboard();
         if (breaks > 0) {

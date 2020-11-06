@@ -129,5 +129,36 @@ public class HelperBase {
                 .perform();
     }
 
+    public void swipeUp(){
+        TouchAction action = new TouchAction(driver);
+        Dimension size = driver.manage().window().getSize();
+        int x = size.width / 2;
+        int startY = (int) (size.height * 0.8);
+        int endY = (int) (size.height * 0.3);
+
+        action
+                .longPress(PointOption.point(x, startY))
+                .moveTo(PointOption.point(x, endY))
+                .release()
+                .perform();
+
+    }
+
+    public void multiSwipe(int swipesCount){
+        for(int i = 0; i <= swipesCount; i++){
+            swipeUp();
+        }
+
+    }
+
+    public void swipeToElement(By locator, int maxSwipes){
+        int alreadySwiped = 0;
+        while(!isElementPresent(locator)&&alreadySwiped<maxSwipes){
+             swipeUp();
+             alreadySwiped++;
+        }
+
+    }
+
 
 }

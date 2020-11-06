@@ -1,9 +1,12 @@
 package com.sch.tests.fw;
 
+import com.sch.tests.tests.TestBase;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -15,6 +18,7 @@ public class ApplicationManager {
 
     UserHelper userHelper;
     EventHelper eventHelper;
+    Logger logger = LoggerFactory.getLogger(ApplicationManager.class);
 
     public void init() throws MalformedURLException {
         capabilities = new DesiredCapabilities();
@@ -27,7 +31,7 @@ public class ApplicationManager {
         capabilities.setCapability("app", "C:\\Users\\Elena\\Dropbox\\Tel-ran\\Mobile\\Grisha\\SuperScheduler\\v.0.0.3.apk");
 
         driver = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
-
+        logger.info("device is Ready");
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
         userHelper = new UserHelper(driver);
