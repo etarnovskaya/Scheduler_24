@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.sch.tests.tests.LaunchAppTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-11-06T08:37:34" hostname="DESKTOP-S1IE1UQ" time="99.307">
-  <properties/>
-  <testcase name="checkThatCreatedEventsArePresentTest" classname="com.sch.tests.tests.LaunchAppTest" time="99.307"/>
-  <system-out><![CDATA[10:37:34 [Test worker] INFO  com.sch.tests.tests.TestBase - start method checkThatCreatedEventsArePresentTest
-10:39:14 [Test worker] INFO  com.sch.tests.tests.TestBase - PASSED: Test method checkThatCreatedEventsArePresentTest
-]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

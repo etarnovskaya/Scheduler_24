@@ -1,0 +1,5 @@
+19:50:42 [Test worker] INFO  com.sch.tests.fw.ApplicationManager - device is Ready
+19:50:42 [Test worker] INFO  com.sch.tests.tests.TestBase - start method checkThatCreatedEventsArePresentTest
+19:51:20 [Test worker] INFO  com.sch.tests.tests.TestBase - PASSED: Test method checkThatCreatedEventsArePresentTest
+19:51:20 [Test worker] INFO  com.sch.tests.tests.TestBase - start method testLaunchApp
+19:51:31 [Test worker] ERROR com.sch.tests.tests.TestBase - FAILED: Test methodtestLaunchApp

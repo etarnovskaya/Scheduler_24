@@ -35,7 +35,7 @@ public class EventCreationTests extends  TestBase{
       //  int before = app.getEventHelper().getEventCountByMonth("November");
         app.getEventHelper().tapOnPlusButton();
         app.getEventHelper().tapOnPencil();
-        app.getEventHelper().swipeCalendarToLeft();
+        //app.getEventHelper().swipeCalendarToLeft();
 
        /*string month, String day (Dec 31)
         list of dates (3)

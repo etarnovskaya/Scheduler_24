@@ -1,0 +1,2 @@
+20:09:03 [Test worker] ERROR com.sch.tests.tests.TestBase - FAILED: Test methodcheckThatCreatedEventsArePresentTest
+20:09:03 [Test worker] ERROR com.sch.tests.tests.TestBase - FAILED: Test methodtestLaunchApp
